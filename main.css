@@ -3,6 +3,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 0%;
+    max-width: 800px;
     opacity: 0;
     animation-name: zoom;
     animation-duration: 2s;
@@ -44,20 +45,20 @@ h1 {
 }
 @keyframes zoomText {
     from {
-        font-size: 0em;
+        font-size: 0;
     }
     to {
-        font-size: 4em;
+        font-size: 6vw;
         opacity: 1;
     }
 }
 @keyframes zoomPulseText {
     from {
-        font-size: 3.6em;
+        font-size: 5vw;
         opacity: 0.9;
     }
     to {
-        font-size: 4em;
+        font-size: 6vw;
         opacity: 1;
     }
 }
