@@ -1,0 +1,63 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0%;
+    opacity: 0;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+body {
+    background-image: linear-gradient(to left, #9796f0, #fbc7d4);
+}
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+#company {
+    opacity: 0;
+    animation-name: zoomText;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+#status {
+    opacity: 0;
+    animation-name: zoomPulseText;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    from {
+        width: 0%;
+    }
+    to { 
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes zoomText {
+    from {
+        font-size: 0em;
+    }
+    to {
+        font-size: 4em;
+        opacity: 1;
+    }
+}
+@keyframes zoomPulseText {
+    from {
+        font-size: 3.6em;
+        opacity: 0.9;
+    }
+    to {
+        font-size: 4em;
+        opacity: 1;
+    }
+}
